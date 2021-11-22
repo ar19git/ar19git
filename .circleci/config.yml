@@ -1,0 +1,27 @@
+def garis():
+    print("="*40)
+
+def kuliah():
+    print('BSI Slipi')
+
+def sapa (nama,kabar="baik",usia="25"):
+    """fungsi ini untuk menyapa seseorang sesuai nama yang dimasukan sebagai parameter """
+    print("hi, " + nama + ", apa kabar? "+kabar)
+    print("kuliah dimana? " )
+    kuliah()
+    print("berapa usianya"+usia)
+  
+# garis()
+# sapa (nama='ramzy',usia='17')
+# garis()
+# sapa (nama='tole',kabar='tidak baik',usia='17')
+
+def print_ulang(nilai, *vartuple):
+    print("outputnya adalah:")
+    print(nilai)
+    for var in vartuple:
+        print(var)
+
+print_ulang(12)
+garis()
+print_ulang(12,14,20,15)
